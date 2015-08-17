@@ -9,12 +9,10 @@
 			tt.interval(1000,function(p){				
 				if(p > 10) tt.stop();
 				var _tt = new TimeTravel();
-				console.log(_tt.format('d/m/Y h:i:s'));
+				document.getElementById('display').innerHTML = _tt.format('d/m/Y h:i:s');
 				return p+1;
 			},1);
-        }
-
-       
+        }       
     </script>
 </head>
 <body onload="startInterval()">
